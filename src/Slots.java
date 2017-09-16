@@ -3,7 +3,7 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-class Main {
+class Slots {
     public static void main(String[] args) throws InterruptedException {
         Scanner scanner = new Scanner(System.in); // Initialize scanner for collecting user inputs
         String[] options = new String[] { "🐶", "🐱", "🐭", "🐰", "🐵", "🦄", "🐧" }; // options
