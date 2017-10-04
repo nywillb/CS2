@@ -86,15 +86,19 @@ public class DotWars {
     }
 
     private static void printBoard(String[][] board) {
+        System.out.println(" |1|2|3|4|5|");
+        int currentrow = 1;
         for(String[] row : board) {
-            System.out.println("-----------");
-            System.out.print("|");
+            System.out.println("- ----------");
+            System.out.print(currentrow + "|");
             for (String slot : row) {
                 System.out.print(slot + "|");
             }
             System.out.println();
+            currentrow++;
+
         }
-        System.out.println("-----------");
+        System.out.println("- ----------");
     }
     private static int getGuess(String prefixQuery) {
         Scanner scanner = new Scanner(System.in);
